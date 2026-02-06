@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Zenith Wellness</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav>
+        <div class="logo">Zenith Wellness</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="therapists.html">Therapists</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section class="contact-page">
+        <div class="container">
+            <h1>Get in Touch</h1>
+            
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <h2>Contact Information</h2>
+                    <div class="info-item">
+                        <strong>📧 Email:</strong>
+                        <p>hello@zenithwellness.com</p>
+                    </div>
+                    <div class="info-item">
+                        <strong>📱 Chat:</strong>
+                        <p>Available 9AM - 9PM</p>
+                    </div>
+                    <div class="info-item">
+                        <strong>📞 Phone:</strong>
+                        <p>+1 (555) 123-4567</p>
+                    </div>
+                    
+                    <div class="social-links">
+                        <h3>Follow Us</h3>
+                        <div class="social-icons">
+                            <span class="social-icon">📷 Instagram</span>
+                            <span class="social-icon">🧘 Calm App</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-form">
+                    <h2>Book a Session</h2>
+                    <form id="booking-form">
+                        <div class="form-group">
+                            <label for="name">Full Name *</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email Address *</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="service">Service Interested In *</label>
+                            <select id="service" name="service" required>
+                                <option value="">Select a service</option>
+                                <option value="therapy">Therapy Sessions</option>
+                                <option value="meditation">Meditation</option>
+                                <option value="resources">Wellness Resources</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label>Preferred Contact Method *</label>
+                            <div class="radio-group">
+                                <input type="radio" id="email-contact" name="contact-method" value="email" required>
+                                <label for="email-contact">Email</label>
+                                
+                                <input type="radio" id="phone-contact" name="contact-method" value="phone">
+                                <label for="phone-contact">Phone</label>
+                                
+                                <input type="radio" id="chat-contact" name="contact-method" value="chat">
+                                <label for="chat-contact">Chat</label>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Additional Notes</label>
+                            <textarea id="message" name="message" rows="4"></textarea>
+                        </div>
+
+                        <div class="form-group checkbox-group">
+                            <input type="checkbox" id="consent" name="consent" required>
+                            <label for="consent">I agree to the terms and privacy policy *</label>
+                        </div>
+
+                        <button type="submit" class="submit-btn">Book Now</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Zenith Wellness. All rights reserved.</p>
+    </footer>
+</body>
+</html>
