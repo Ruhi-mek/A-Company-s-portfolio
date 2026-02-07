@@ -1,0 +1,62 @@
+/* Therapists, FAQs, Services pages */
+.page-therapists { background: #FCEFF2; min-height: 50vh; padding: 2rem; }
+.therapists-pattern { background-image: radial-gradient(circle, rgba(0,0,0,0.03) 1px, transparent 1px); background-size: 20px 20px; }
+.therapists-title { text-align: center; font-size: clamp(2rem, 5vw, 3rem); font-weight: 700; color: #2D2D2D; margin: 0 0 3rem; padding-top: 2rem; }
+.therapist-list { max-width: 900px; margin: 0 auto; display: flex; flex-direction: column; gap: 2rem; }
+.therapist-card { display: grid; grid-template-columns: 180px 1fr; gap: 2.5rem; align-items: center; padding: 2rem 2.5rem; background: #F8E4E8; border-radius: 20px; }
+.therapist-img { width: 160px; height: 160px; border-radius: 50%; object-fit: cover; }
+.therapist-info h3 { font-size: 1.35rem; font-weight: 700; color: #2D2D2D; margin: 0 0 1rem; }
+.therapist-info ul { margin: 0; padding: 0 0 0 1.25rem; list-style: disc; }
+.therapist-info li { margin-bottom: 0.5rem; font-size: 0.95rem; color: #5A5A5A; line-height: 1.6; }
+
+.page-faqs { background: #FFD1DD; min-height: 60vh; padding: 2rem; }
+.faqs-hero { max-width: 800px; margin: 0 auto 3rem; position: relative; }
+.faqs-title { font-size: clamp(1.75rem, 4vw, 2.5rem); font-weight: 700; color: #2D2D2D; text-align: center; margin: 0 0 2rem; }
+.faqs-question-mark { position: absolute; top: -20px; right: 20px; font-size: 6rem; font-weight: 300; color: rgba(255,255,255,0.9); line-height: 1; }
+.faqs-search { display: flex; gap: 1rem; margin-bottom: 2rem; }
+.faqs-search-wrapper { flex: 1; display: flex; align-items: center; background: #9089E4; border-radius: 16px; padding: 0 1.25rem; }
+.faqs-search-wrapper input { flex: 1; padding: 1rem 0 1rem 0.5rem; background: transparent; border: none; font-size: 1rem; color: #fff; font-family: inherit; }
+.faqs-search-wrapper input::placeholder { color: rgba(255,255,255,0.8); }
+.faqs-search-magnify { font-size: 1.1rem; color: rgba(255,255,255,0.9); margin-right: 0.5rem; }
+.faqs-category { padding: 0.5rem 1.25rem; background: #9089E4; color: #fff; border: none; border-radius: 12px; font-size: 0.95rem; font-weight: 600; cursor: pointer; font-family: inherit; }
+.faqs-list { display: grid; grid-template-columns: 120px 1fr; gap: 2rem; max-width: 800px; margin: 0 auto; }
+.faq-item { display: flex; align-items: center; justify-content: space-between; padding: 1rem 0; border-bottom: 1px solid rgba(0,0,0,0.1); cursor: pointer; grid-column: 2; }
+.faq-item-content h4 { font-size: 1rem; font-weight: 700; color: #2D2D2D; margin: 0 0 0.25rem; }
+.faq-item-content span { font-size: 0.85rem; color: #5A5A5A; }
+.faq-chevron { color: #9089E4; font-size: 1.25rem; display: inline-block; transition: transform 0.2s; }
+.faq-item.expanded .faq-chevron { transform: rotate(180deg); }
+.faqs-still-question { max-width: 500px; margin: 3rem auto; padding: 2.5rem; background: #fff; border: 2px solid #80CBC4; border-radius: 20px; text-align: center; position: relative; }
+.faqs-still-question h3 { font-size: 1.25rem; font-weight: 700; color: #2D2D2D; margin: 0 0 1.5rem; }
+.faqs-still-question .btn-contact { padding: 0.75rem 2rem; background: #57A362; color: #fff; border: none; border-radius: 12px; font-size: 1rem; font-weight: 600; cursor: pointer; font-family: inherit; }
+.faqs-arrow { position: absolute; top: -10px; right: 80px; width: 50px; height: 50px; }
+
+.page-services { background: #fff; }
+.services-hero { background: linear-gradient(135deg, #FCEFF2 0%, #F5E6F0 100%); padding: 3rem 2rem 4rem; }
+.help-center-inner { max-width: 1000px; margin: 0 auto; display: grid; grid-template-columns: 1fr auto; gap: 2rem; align-items: start; position: relative; }
+.help-center-title { font-size: clamp(1.75rem, 4vw, 2.5rem); font-weight: 700; color: #2D2D2D; margin: 0 0 1.5rem; }
+.help-center-search { display: flex; align-items: center; padding: 1rem 1.25rem; background: #fff; border: 1px solid rgba(0,0,0,0.1); border-radius: 12px; gap: 0.75rem; }
+.help-center-search input { flex: 1; border: none; font-size: 1rem; font-family: inherit; color: #2D2D2D; }
+.help-center-search input::placeholder { color: #999; }
+.help-dog { width: 180px; font-size: 8rem; line-height: 1; text-align: center; }
+.help-24-7 { position: absolute; top: 60px; right: 120px; display: flex; align-items: center; gap: 0.5rem; padding: 0.5rem 1rem; background: #FCEFF2; border-radius: 12px; font-size: 0.9rem; font-weight: 600; color: #2D2D2D; }
+.services-section { padding: 4rem 2rem; }
+.services-title { text-align: center; font-size: clamp(2rem, 4vw, 3rem); font-weight: 700; color: #2D2D2D; margin: 0 0 3rem; }
+.services-grid { max-width: 1100px; margin: 0 auto; display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem; }
+.service-card { padding: 2rem; border-radius: 20px; border: 1px solid rgba(0,0,0,0.08); background: #fff; position: relative; }
+.service-card-featured { background: #FBE9E7; }
+.service-card h3 { font-size: 1.25rem; font-weight: 700; color: #2D2D2D; margin: 0 0 0.75rem; }
+.service-card p { font-size: 0.95rem; color: #5A5A5A; line-height: 1.6; margin: 0 0 1.25rem; }
+.service-card ul { margin: 0 0 1.5rem; padding: 0 0 0 1.25rem; list-style: none; }
+.service-card ul li { position: relative; margin-bottom: 0.5rem; font-size: 0.9rem; color: #5A5A5A; padding-left: 1.5rem; }
+.service-card ul li::before { content: '✓'; position: absolute; left: 0; color: #E57373; font-weight: bold; }
+.service-star { position: absolute; top: 1.5rem; right: 1.5rem; color: #80CBC4; font-size: 1.5rem; }
+.btn-service { padding: 0.6rem 1.25rem; background: transparent; color: #5C9EED; border: 2px solid #5C9EED; border-radius: 12px; font-size: 0.95rem; font-weight: 600; cursor: pointer; font-family: inherit; }
+
+@media (max-width: 900px) {
+  .therapist-card { grid-template-columns: 1fr; text-align: center; }
+  .therapist-img { margin: 0 auto; }
+  .faqs-list { grid-template-columns: 1fr; }
+  .help-center-inner { grid-template-columns: 1fr; }
+  .help-dog { display: none; }
+  .services-grid { grid-template-columns: 1fr; }
+}
