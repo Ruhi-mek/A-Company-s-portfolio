@@ -1,56 +1,184 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Zenith Wellness - Mental Health Platform</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zenith Wellness - Mental Wellness Platform</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- Navigation -->
-    <nav>
-        <div class="logo">Zenith Wellness</div>
-        <ul class="nav-links">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="services.html">Services</a></li>
-            <li><a href="therapists.html">Therapists</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-    </nav>
+  <!-- Header / Navigation -->
+  <header class="header">
+    <div class="header-inner">
+      <a href="#" class="logo">Zenith</a>
+      <nav class="nav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About us</a>
+        <a href="therapists.html">Therapists</a>
+        <a href="services.html">Service</a>
+        <a href="#">Contact us</a>
+        <a href="faqs.html">FAQs</a>
+      </nav>
+      <a href="#" class="btn-login">Login</a>
+    </div>
+  </header>
 
-    <!-- Hero Section -->
-    <section class="hero">
-        <div class="hero-content">
-            <h1>Find Your Inner Peace</h1>
-            <p>Professional mental wellness support for busy professionals and students</p>
-            <button class="cta-button">Take the Quiz</button>
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-illustrations">
+      <img src="assets/hero-meditation.png" alt="" class="hero-img hero-img-1">
+      <img src="assets/hero-hand-support.png" alt="" class="hero-img hero-img-2">
+      <img src="assets/hero-lotus.png" alt="" class="hero-img hero-img-3">
+      <img src="assets/hero-growth.png" alt="" class="hero-img hero-img-4">
+      <img src="assets/hero-heads.png" alt="" class="hero-img hero-img-5">
+      <img src="assets/hero-mirror.png" alt="" class="hero-img hero-img-6">
+    </div>
+    <div class="hero-content">
+      <h1>Zenith<br><span>Wellness for you</span></h1>
+      <button class="btn btn-signup-hero">Sign up</button>
+    </div>
+  </section>
+
+  <!-- Find Your Inner Peace Section -->
+  <section class="inner-peace">
+    <div class="inner-peace-inner">
+      <div class="inner-peace-content">
+        <h2>Find Your Inner Peace</h2>
+        <p>Zenith wellness is a holistic mental wellness platform designed to support your emotional and psychological well-being. We understand that life can be overwhelming, which is why we offer a comprehensive range of services including online therapy, guided meditation, and wellness resources to help you navigate challenges and cultivate a balanced, fulfilling life.</p>
+      </div>
+      <div class="inner-peace-card">
+        <img src="assets/inner-peace-woman.png" alt="Woman relaxing with headphones" class="inner-peace-image">
+        <div class="inner-peace-card-overlay"></div>
+        <h3>Professional mental wellness support for busy professionals and students</h3>
+        <button class="btn btn-quiz">Take the Quiz</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section class="features">
+    <div class="features-curve">
+      <svg viewBox="0 0 500 600" fill="none">
+        <path d="M20 60 Q120 120 180 220 Q240 380 120 480 Q80 540 320 580" stroke="#7EC4C4" stroke-width="2" stroke-dasharray="8 6" stroke-linecap="round" fill="none"/>
+      </svg>
+    </div>
+    <h2 class="features-title">Features</h2>
+    <div class="features-grid">
+      <div class="feature-card feature-card-teal">
+        <h3>Private Therapy Sessions</h3>
+        <p>Connect with licensed therapists for personalized guidance to overcome burnout and anxiety in a safe, confidential environment.</p>
+      </div>
+      <div class="feature-card feature-card-purple">
+        <h3>Guided Meditation</h3>
+        <p>Access curated audio sessions designed to calm your mind, improve focus, and bring balance to your busy daily routine.</p>
+      </div>
+      <div class="feature-card feature-card-peach">
+        <h3>Wellness Toolkit</h3>
+        <p>Practical exercises, mood trackers, and journaling resources to help you rebalance your emotional health and build resilience.</p>
+        <img src="assets/feature-toolkit.png" alt="" class="feature-icon-img">
+      </div>
+      <div class="feature-card feature-card-events">
+        <h3>Wellness Events</h3>
+        <p>Join live virtual workshops and community sessions focused on holistic healing, mindfulness, and self-care techniques.</p>
+        <img src="assets/feature-events.png" alt="" class="feature-icon-img">
+      </div>
+    </div>
+  </section>
+
+  <!-- Getting Started Section -->
+  <section class="getting-started">
+    <div class="getting-started-box">
+      <h2>Getting started</h2>
+      <div class="getting-started-cta">
+        <button class="btn btn-signup-green">Sign Up</button>
+        <svg class="getting-started-arrow" viewBox="0 0 70 80" fill="none">
+          <path d="M8 65 Q35 5 65 45" stroke="#E8B4B8" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+          <path d="M58 38 L65 45 L60 52" fill="#E8B4B8"/>
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  <!-- Get In Touch Section -->
+  <section class="get-in-touch">
+    <div class="get-in-touch-inner">
+      <div class="get-in-touch-info">
+        <h2>Get In Touch</h2>
+        <div class="social-icons">
+          <a href="#" class="social-icon" aria-label="Instagram">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="18" cy="6" r="1.5"/></svg>
+          </a>
+          <a href="#" class="social-icon" aria-label="LinkedIn">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="2"/><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+          </a>
+          <a href="#" class="social-icon" aria-label="Email">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          </a>
         </div>
-    </section>
-
-    <!-- Featured Services -->
-    <section class="services-preview">
-        <h2>Our Services</h2>
-        <div class="service-cards">
-            <div class="service-card">
-                <h3>Therapy Sessions</h3>
-                <p>One-on-one professional counseling</p>
-            </div>
-            <div class="service-card">
-                <h3>Meditation</h3>
-                <p>Daily guided meditation practices</p>
-            </div>
-            <div class="service-card">
-                <h3>Wellness Resources</h3>
-                <p>Articles, tools, and self-care guides</p>
-            </div>
+        <p class="copyright">© 2026 Zenith Wellness. All rights reserved.</p>
+        <div class="legal-links">
+          <a href="#">Privacy</a>
+          <span>•</span>
+          <a href="#">Terms</a>
+          <span>•</span>
+          <a href="#">Sitemap</a>
         </div>
-    </section>
+      </div>
+      <form class="contact-form">
+        <label for="name">Name</label>
+        <input type="text" id="name" placeholder="Enter your Name">
+        <label for="email">Email</label>
+        <input type="email" id="email" placeholder="Enter your Email">
+        <label for="message">How can we help?</label>
+        <textarea id="message" placeholder="Enter your message here" rows="4"></textarea>
+        <button type="submit" class="btn btn-submit">Submit</button>
+      </form>
+    </div>
+  </section>
 
-    <!-- Footer -->
-    <footer>
-        <p>&copy; 2026 Zenith Wellness. All rights reserved.</p>
-    </footer>
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-column">
+        <h4>About</h4>
+        <a href="#">Home</a>
+        <a href="#">Our story</a>
+      </div>
+      <div class="footer-column">
+        <h4>Help</h4>
+      </div>
+      <div class="footer-column">
+        <h4>Contact</h4>
+        <p>Phone: +2519 10193204</p>
+        <p>Email: Salihatali38@gmail.com</p>
+        <p>ruhi98mek@gmail.com</p>
+      </div>
+      <div class="footer-column footer-promo">
+        <h4>Receive new promotions</h4>
+        <p class="collab-text">let's collaborate</p>
+        <div class="newsletter-form">
+          <input type="email" placeholder="Input your email" aria-label="Email for newsletter">
+          <button type="button" class="btn btn-subscribe">Subscribe</button>
+        </div>
+        <div class="footer-social">
+          <a href="#" aria-label="Twitter">𝕏</a>
+          <a href="#" aria-label="Facebook">f</a>
+          <a href="#" aria-label="LinkedIn">in</a>
+          <a href="#" aria-label="YouTube">▶</a>
+        </div>
+        <p class="copyright">© 2026 Zenith Wellness. All rights reserved.</p>
+        <div class="legal-links">
+          <a href="#">Privacy</a>
+          <span>•</span>
+          <a href="#">Terms</a>
+          <span>•</span>
+          <a href="#">Sitemap</a>
+        </div>
+      </div>
+    </div>
+  </footer>
 </body>
 </html>
