@@ -1,0 +1,11 @@
+/* Contact Us page - Get In Touch full page */
+.contact-page .get-in-touch {
+  min-height: 60vh;
+  background: #5C458A;
+  background-image: radial-gradient(circle, rgba(255,255,255,0.03) 1px, transparent 1px);
+  background-size: 24px 24px;
+}
+
+.contact-page .btn-login {
+  background: var(--color-blue);
+}
