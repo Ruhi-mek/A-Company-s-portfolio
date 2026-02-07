@@ -1,55 +1,144 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Services - Zenith Wellness</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Services - Zenith Wellness</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="pages.css">
 </head>
 <body>
-    <nav>
-        <div class="logo">Zenith Wellness</div>
-        <ul class="nav-links">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="services.html">Services</a></li>
-            <li><a href="therapists.html">Therapists</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-    </nav>
+  <header class="header">
+    <div class="header-inner">
+      <a href="index.html" class="logo">Zenith</a>
+      <nav class="nav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About us</a>
+        <a href="therapists.html">Therapists</a>
+        <a href="services.html" class="nav-active">Service</a>
+        <a href="#">Contact us</a>
+        <a href="faqs.html">FAQs</a>
+      </nav>
+      <a href="#" class="btn-login btn-login-outline">Login</a>
+    </div>
+  </header>
 
-    <section class="services-page">
-        <div class="container">
-            <h1>Our Services</h1>
-            
-            <div class="service-detail-cards">
-                <div class="service-detail-card">
-                    <div class="service-icon">🧠</div>
-                    <h2>Therapy Sessions</h2>
-                    <p>Professional one-on-one counseling with licensed therapists. We offer cognitive behavioral therapy, mindfulness-based therapy, and solution-focused approaches.</p>
-                    <button class="service-cta">Start Now</button>
-                </div>
-
-                <div class="service-detail-card">
-                    <div class="service-icon">🧘</div>
-                    <h2>Meditation</h2>
-                    <p>Daily guided meditation sessions ranging from 5 to 30 minutes. Perfect for beginners and experienced meditators alike.</p>
-                    <button class="service-cta">Start Now</button>
-                </div>
-
-                <div class="service-detail-card">
-                    <div class="service-icon">📚</div>
-                    <h2>Wellness Resources</h2>
-                    <p>Access to our library of articles, self-care guides, breathing exercises, and mental health tools available 24/7.</p>
-                    <button class="service-cta">Start Now</button>
-                </div>
-            </div>
+  <section class="services-hero">
+    <div class="help-center-inner">
+      <div>
+        <h1 class="help-center-title">Help Center</h1>
+        <div class="help-center-search">
+          <span style="font-size: 1.2rem;">🔍</span>
+          <input type="text" placeholder="I have trouble with" aria-label="Search help">
         </div>
-    </section>
+        <div class="help-24-7">
+          <span>🔒</span>
+          <span>24/7</span>
+        </div>
+      </div>
+      <div class="help-dog" aria-hidden="true">🐕</div>
+    </div>
+  </section>
 
-    <footer>
-        <p>&copy; 2026 Zenith Wellness. All rights reserved.</p>
-    </footer>
+  <section class="services-section">
+    <h2 class="services-title">Services</h2>
+    <div class="services-grid">
+      <div class="service-card">
+        <h3>Therapy Sessions</h3>
+        <p>Professional one-on-one counseling with licensed therapists. We offer</p>
+        <ul>
+          <li>Cognitive behavioral therapy</li>
+          <li>Mindfulness-based therapy</li>
+          <li>Solution-focused approaches</li>
+        </ul>
+        <button class="btn-service">Start Now</button>
+      </div>
+      <div class="service-card service-card-featured">
+        <span class="service-star">★</span>
+        <h3>Wellness Resources</h3>
+        <p>Access to our library of articles</p>
+        <ul>
+          <li>Self-care guides</li>
+          <li>Breathing exercises</li>
+          <li>30-day free trial</li>
+          <li>Mental health tools available 24/7</li>
+          <li>Chat support 24/7</li>
+        </ul>
+        <button class="btn-service">Start Now</button>
+      </div>
+      <div class="service-card">
+        <h3>Meditation</h3>
+        <p>Daily guided meditation sessions ranging from 5 to 30 minutes. Perfect for beginners and experienced meditators alike.</p>
+        <ul>
+          <li>Advanced support services</li>
+        </ul>
+        <button class="btn-service">Start Now</button>
+      </div>
+    </div>
+  </section>
+
+  <section class="getting-started">
+    <div class="getting-started-box">
+      <h2>Getting started</h2>
+      <div class="getting-started-cta">
+        <button class="btn btn-signup-green">Sign Up</button>
+        <svg class="getting-started-arrow" viewBox="0 0 70 80" fill="none">
+          <path d="M8 65 Q35 5 65 45" stroke="#E8B4B8" stroke-width="2.5" stroke-linecap="round"/>
+          <path d="M58 38 L65 45 L60 52" fill="#E8B4B8"/>
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  <section class="get-in-touch">
+    <div class="get-in-touch-inner">
+      <div class="get-in-touch-info">
+        <h2>Get In Touch</h2>
+        <div class="social-icons">
+          <a href="#" class="social-icon" aria-label="Instagram"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="18" cy="6" r="1.5"/></svg></a>
+          <a href="#" class="social-icon" aria-label="LinkedIn"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="2"/><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg></a>
+          <a href="#" class="social-icon" aria-label="Email"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></a>
+        </div>
+        <p class="copyright">© 2026 Zenith Wellness. All rights reserved.</p>
+        <div class="legal-links"><a href="#">Privacy</a><span>•</span><a href="#">Terms</a><span>•</span><a href="#">Sitemap</a></div>
+      </div>
+      <form class="contact-form">
+        <label for="name">Name</label>
+        <input type="text" id="name" placeholder="Enter your Name">
+        <label for="email">Email</label>
+        <input type="email" id="email" placeholder="Enter your Email">
+        <label for="message">How can we help?</label>
+        <textarea id="message" placeholder="Enter your message here" rows="4"></textarea>
+        <button type="submit" class="btn btn-submit">Submit</button>
+      </form>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-column"><h4>About</h4><a href="index.html">Home</a><a href="about.html">Our story</a></div>
+      <div class="footer-column"><h4>Help</h4></div>
+      <div class="footer-column">
+        <h4>Contact</h4>
+        <p>Phone: +2519 10193204</p>
+        <p>Email: Salihatali38@gmail.com</p>
+        <p>ruhi98mek@gmail.com</p>
+      </div>
+      <div class="footer-column footer-promo">
+        <h4>Receive new promotions</h4>
+        <p class="collab-text">let's collaborate</p>
+        <div class="newsletter-form">
+          <input type="email" placeholder="Input your email" aria-label="Email">
+          <button type="button" class="btn btn-subscribe">Subscribe</button>
+        </div>
+        <div class="footer-social"><a href="#" aria-label="Twitter">𝕏</a><a href="#" aria-label="Facebook">f</a><a href="#" aria-label="LinkedIn">in</a><a href="#" aria-label="YouTube">▶</a></div>
+        <p class="copyright">© 2026 Zenith Wellness. All rights reserved.</p>
+        <div class="legal-links"><a href="#">Privacy</a><span>•</span><a href="#">Terms</a><span>•</span><a href="#">Sitemap</a></div>
+      </div>
+    </div>
+  </footer>
 </body>
 </html>
