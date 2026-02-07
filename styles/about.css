@@ -1,0 +1,57 @@
+/* About Us page */
+.page-hero { padding: 4rem 2rem 3rem; }
+.page-hero-pink { background: #FEE7F0; }
+.page-title { font-size: clamp(2rem, 5vw, 3rem); font-weight: 700; color: #2D2D2D; margin: 0; }
+.page-title-underline {
+  width: 120px; height: 6px;
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 120 6'%3E%3Cpath d='M0 3 Q30 0 60 3 T120 3' stroke='%23A78BFA' stroke-width='2.5' fill='none'/%3E%3C/svg%3E") no-repeat;
+  margin-top: 0.5rem;
+}
+
+.about-founder { background: #DBD0E9; padding: 4rem 2rem; }
+.about-founder-inner { max-width: 1200px; margin: 0 auto; display: grid; grid-template-columns: auto 1fr; gap: 4rem; align-items: center; }
+.founder-images { display: flex; gap: 2rem; }
+.founder-card { display: flex; flex-direction: column; align-items: center; gap: 1rem; }
+.founder-img { width: 140px; height: 140px; border-radius: 50%; object-fit: cover; }
+.founder-name { padding: 0.5rem 1rem; background: #D8B4E1; border-radius: 12px; font-weight: 600; font-size: 0.95rem; color: #2D2D2D; }
+.founder-story-text h2 { font-size: 1.5rem; font-weight: 700; color: #2D2D2D; margin: 0 0 1rem; }
+.founder-story-text p { font-size: 1rem; color: #5A5A5A; line-height: 1.7; margin: 0; }
+
+.about-content { background: #FEE7F0; padding: 4rem 2rem; }
+.about-content-inner { max-width: 1200px; margin: 0 auto; display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; }
+.about-label { display: inline-block; padding: 0.4rem 1rem; background: #D8B4E1; border-radius: 12px; font-weight: 600; font-size: 0.9rem; color: #2D2D2D; margin-bottom: 1rem; }
+.about-mission-box { background: #E2C7ED; border-radius: 16px; padding: 1.5rem; margin-bottom: 2rem; }
+.about-mission-box p { margin: 0; font-size: 1rem; color: #2D2D2D; line-height: 1.6; }
+.principles-list { display: flex; flex-direction: column; gap: 1rem; }
+.principle-item { padding: 1rem 1.25rem; border-radius: 20px; font-size: 0.95rem; color: #2D2D2D; line-height: 1.5; }
+.principle-teal { background: #B2EBF2; }
+.principle-lavender { background: #D1C4E9; }
+.principle-peach { background: #F5E0C4; }
+
+.about-timeline { position: relative; z-index: 1; }
+.about-timeline h3 { font-size: 1.25rem; font-weight: 700; color: #2D2D2D; margin: 0 0 0.5rem; }
+.timeline-underline { width: 100px; height: 4px; background: #9C27B0; border-radius: 2px; margin-bottom: 2rem; }
+.timeline { position: relative; padding-left: 2rem; border-left: 2px dashed #9C27B0; margin-left: 0.5rem; }
+.timeline-item { position: relative; margin-bottom: 2rem; }
+.timeline-item::before { content: ''; position: absolute; left: -2.5rem; top: 0.25rem; width: 12px; height: 12px; background: #9C27B0; border-radius: 50%; }
+.timeline-year { display: block; font-weight: 700; font-size: 1rem; color: #2D2D2D; margin-bottom: 0.25rem; }
+.timeline-item p { margin: 0; font-size: 0.95rem; color: #5A5A5A; line-height: 1.5; }
+.about-curve { position: absolute; top: 50%; right: -50px; width: 300px; height: 400px; border: 2px dashed #80CBC4; border-radius: 50%; opacity: 0.6; transform: translateY(-50%) rotate(-15deg); z-index: 0; }
+.about-right { position: relative; }
+
+.testimonials { background: #212121; padding: 4rem 2rem; }
+.testimonials h2 { font-size: 1.5rem; font-weight: 700; color: #fff; text-align: center; margin: 0 0 3rem; letter-spacing: 0.05em; }
+.testimonials-inner { max-width: 1000px; margin: 0 auto; }
+.testimonials-content { display: grid; grid-template-columns: 180px 1fr; gap: 3rem; }
+.testimonial-tabs { display: flex; flex-direction: column; gap: 0.75rem; }
+.testimonial-tab { padding: 0.75rem 1rem; background: #D8B4E1; border: none; border-radius: 12px; font-size: 0.95rem; font-weight: 600; color: #2D2D2D; cursor: pointer; text-align: left; font-family: inherit; }
+.testimonial-tab.active { background: #E2C7ED; }
+.testimonial-cards { display: flex; flex-direction: column; gap: 1rem; }
+.testimonial-card { padding: 1.25rem 1.5rem; background: #B2EBF2; border-radius: 16px; font-size: 0.95rem; color: #2D2D2D; line-height: 1.6; }
+
+@media (max-width: 900px) {
+  .about-founder-inner { grid-template-columns: 1fr; }
+  .founder-images { justify-content: center; }
+  .about-content-inner { grid-template-columns: 1fr; }
+  .testimonials-content { grid-template-columns: 1fr; }
+}
