@@ -1,3 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700&display=swap');
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --color-pink-dark: #FEC1D4;
+  --color-pink: #FDF1F5;
+  --color-purple: #8368B5;
+  --color-purple-light: #B563E8;
+  --color-teal: #E0F7FA;
+  --color-peach: #F8DBD0;
+  --color-green: #BAF3EB;
+  --color-blue: #CED0F8;
+  --color-text: #171A1F;
+  --color-text-muted: #424955;
+  --color-white: #FFFFFF;
+  --color-button: #636AE8;
+  --border-radius: 24px;
+  --border-radius-sm: 12px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Poppins', -apple-system, BlinkMacSystemFont, sans-serif;
+  color: var(--color-text-muted);
+  overflow-x: hidden;
+  z-index: 100;
+}
+
+a {
+  text-decoration: none;
+  font-weight: 500;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.header {
+  background: var(--color-white);
+  padding: 1rem 2rem;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.header-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+} 
+
+.Cname {
+  font-size: 1.5rem;
+  font-weight: bold; 
+}
+
+.nav {
+  display: flex;
+  gap: 2rem;
+  font-size: 0.95rem;
+  font-weight: 500;
+}
+
+.nav a:hover {
+  color: var(--color-text);
+}
+
+.nav-active {
+  color: var(--color-text) !important;
+  font-weight: 600;
+}
+
+.btn-login {
+  padding: 0.5rem 1.25rem;
+  color: var(--color-button);
+  border-radius: var(--border-radius-sm);
+  font-weight: 600;
+  font-size: 0.95rem;
+  transition: opacity 0.2s;
+}
+
+.btn-login:hover {
+  opacity: 0.9;
+}
+
 /* ===== Page Shared Styles ===== */
 .page-hero {
   padding: 4rem 2rem 3rem;
