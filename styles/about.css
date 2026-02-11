@@ -167,8 +167,7 @@ color: #323842;
   border-radius: 20px; /* Optional: rounded corners */
 }
 
-.site-footer{background:var(--pink);padding:28px 0;margin-top:28px}
-.footer-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;max-width:1100px;margin:0 auto}
+
 
 @media(max-width:900px){
   .founders-row{flex-direction:column}
