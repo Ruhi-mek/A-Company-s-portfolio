@@ -1,57 +1,183 @@
-/* About Us page */
-.page-hero { padding: 4rem 2rem 3rem; }
-.page-hero-pink { background: #FEE7F0; }
-.page-title { font-size: clamp(2rem, 5vw, 3rem); font-weight: 700; color: #2D2D2D; margin: 0; }
-.page-title-underline {
-  width: 120px; height: 6px;
-  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 120 6'%3E%3Cpath d='M0 3 Q30 0 60 3 T120 3' stroke='%23A78BFA' stroke-width='2.5' fill='none'/%3E%3C/svg%3E") no-repeat;
-  margin-top: 0.5rem;
+:root{
+  --pink:#ffd6e0;
+  --muted:#f6f0f2;
+  --text:#2b2b2b;
+  --accent:#6c63ff;
+  --mint:#c8f3ea;
+  --lav:#d9d7ff;
+  --peach:#f7d3c8;
+}
+*{box-sizing:border-box}
+html,body{height:100%}
+body{font-family:'Poppins',system-ui,-apple-system,'Segoe UI',Roboto,Helvetica,Arial;margin:0;background:var(--pink);color:var(--text)}
+.container{
+ max-width:1100px;
+ margin:0 auto;
+ padding:18px
 }
 
-.about-founder { background: #DBD0E9; padding: 4rem 2rem; }
-.about-founder-inner { max-width: 1200px; margin: 0 auto; display: grid; grid-template-columns: auto 1fr; gap: 4rem; align-items: center; }
-.founder-images { display: flex; gap: 2rem; }
-.founder-card { display: flex; flex-direction: column; align-items: center; gap: 1rem; }
-.founder-img { width: 140px; height: 140px; border-radius: 50%; object-fit: cover; }
-.founder-name { padding: 0.5rem 1rem; background: #D8B4E1; border-radius: 12px; font-weight: 600; font-size: 0.95rem; color: #2D2D2D; }
-.founder-story-text h2 { font-size: 1.5rem; font-weight: 700; color: #2D2D2D; margin: 0 0 1rem; }
-.founder-story-text p { font-size: 1rem; color: #5A5A5A; line-height: 1.7; margin: 0; }
 
-.about-content { background: #FEE7F0; padding: 4rem 2rem; }
-.about-content-inner { max-width: 1200px; margin: 0 auto; display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; }
-.about-label { display: inline-block; padding: 0.4rem 1rem; background: #D8B4E1; border-radius: 12px; font-weight: 600; font-size: 0.9rem; color: #2D2D2D; margin-bottom: 1rem; }
-.about-mission-box { background: #E2C7ED; border-radius: 16px; padding: 1.5rem; margin-bottom: 2rem; }
-.about-mission-box p { margin: 0; font-size: 1rem; color: #2D2D2D; line-height: 1.6; }
-.principles-list { display: flex; flex-direction: column; gap: 1rem; }
-.principle-item { padding: 1rem 1.25rem; border-radius: 20px; font-size: 0.95rem; color: #2D2D2D; line-height: 1.5; }
-.principle-teal { background: #B2EBF2; }
-.principle-lavender { background: #D1C4E9; }
-.principle-peach { background: #F5E0C4; }
+:root{--pink:#FEC1D4;--pink-deep:#f6b6c6;--lav:#d9d8ff;--mint:#cffaf0;--peach:#fde6d9;--text:#222;--accent:#6c63ff}
 
-.about-timeline { position: relative; z-index: 1; }
-.about-timeline h3 { font-size: 1.25rem; font-weight: 700; color: #2D2D2D; margin: 0 0 0.5rem; }
-.timeline-underline { width: 100px; height: 4px; background: #9C27B0; border-radius: 2px; margin-bottom: 2rem; }
-.timeline { position: relative; padding-left: 2rem; border-left: 2px dashed #9C27B0; margin-left: 0.5rem; }
-.timeline-item { position: relative; margin-bottom: 2rem; }
-.timeline-item::before { content: ''; position: absolute; left: -2.5rem; top: 0.25rem; width: 12px; height: 12px; background: #9C27B0; border-radius: 50%; }
-.timeline-year { display: block; font-weight: 700; font-size: 1rem; color: #2D2D2D; margin-bottom: 0.25rem; }
-.timeline-item p { margin: 0; font-size: 0.95rem; color: #5A5A5A; line-height: 1.5; }
-.about-curve { position: absolute; top: 50%; right: -50px; width: 300px; height: 400px; border: 2px dashed #80CBC4; border-radius: 50%; opacity: 0.6; transform: translateY(-50%) rotate(-15deg); z-index: 0; }
-.about-right { position: relative; }
+.site-header{background:#fff;border-bottom:4px solid var(--pink-deep)}
+.nav-row{display:flex;align-items:center;justify-content:space-between;padding:12px 18px}
+.logo{font-weight:800;font-size:20px}
+.main-nav a{margin:0 10px;text-decoration:none;color:#333;font-weight:500}
+.main-nav a.active{color:var(--accent)}
+.auth .login,.login{color:var(--accent);font-weight:700}
 
-.testimonials { background: #212121; padding: 4rem 2rem; }
-.testimonials h2 { font-size: 1.5rem; font-weight: 700; color: #fff; text-align: center; margin: 0 0 3rem; letter-spacing: 0.05em; }
-.testimonials-inner { max-width: 1000px; margin: 0 auto; }
-.testimonials-content { display: grid; grid-template-columns: 180px 1fr; gap: 3rem; }
-.testimonial-tabs { display: flex; flex-direction: column; gap: 0.75rem; }
-.testimonial-tab { padding: 0.75rem 1rem; background: #D8B4E1; border: none; border-radius: 12px; font-size: 0.95rem; font-weight: 600; color: #2D2D2D; cursor: pointer; text-align: left; font-family: inherit; }
-.testimonial-tab.active { background: #E2C7ED; }
-.testimonial-cards { display: flex; flex-direction: column; gap: 1rem; }
-.testimonial-card { padding: 1.25rem 1.5rem; background: #B2EBF2; border-radius: 16px; font-size: 0.95rem; color: #2D2D2D; line-height: 1.6; }
+.hero{background:var(--soft);padding:48px 0;margin-bottom:16px}
+.hero h1{font-size:40px;margin:0;color:#333}
+.accent-underline{width:140px;height:8px;border-bottom:6px solid var(--accent);border-radius:8px;margin-top:12px}
 
-@media (max-width: 900px) {
-  .about-founder-inner { grid-template-columns: 1fr; }
-  .founder-images { justify-content: center; }
-  .about-content-inner { grid-template-columns: 1fr; }
-  .testimonials-content { grid-template-columns: 1fr; }
+
+
+.about-section {
+  background: rgba(99,96,165,0.04); /* very light purple background */
+  padding: 26px;                   /* space inside the box */
+  border-radius: 10px;             /* rounded corners */
+  margin-bottom: 18px;             /* space below the section */
 }
+
+.founders-row {
+  display: flex;       /* lays out children in a row */
+  gap: 24px;           /* space between items */
+  align-items: center; /* vertically centers items */
+}
+
+.photos {
+  display: flex;            /* lays out images in a row */
+  flex-direction: row;      /* ensures horizontal alignment */
+  gap: 12px;                /* space between images */
+}
+
+.photos img {
+  width: 169px; height: 253px;;       /* fixed size for images */
+  border-radius:  200px;;                /* rounded corners (slightly oval) */
+  object-fit: cover;                 /* crops image to fill box neatly */            /* white border around each photo */
+  box-shadow: 0 8px 20px rgba(0,0,0,0.06); /* subtle shadow for depth */
+}
+
+.founder-copy p {
+  font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 20px;
+line-height: 30px;
+/* or 150% */
+letter-spacing: 0.1em;
+
+color: #323842;
+      /* dark gray text color */
+}
+
+
+.founder-wrapper {
+  background: #CED0F8;   /* pastel purple background */
+  border-radius: 20px;
+  padding: 40px 0;       /* vertical padding only */
+  margin: 40px 0;        /* spacing above/below */
+}
+
+
+.mission-timeline{display:flex;gap:20px;align-items:flex-start;margin-top:18px}
+.mission{flex:1}
+.pill{display:inline-block;background:#B563E8;padding:10px 16px;border-radius:10px;font-weight:700;color:#FFFFFF;margin-bottom:12px}
+.mission-box{background: #F5DDED;
+  position: absolute;
+  width: 641px;
+  height: 166px;
+  font-family: 'Archivo';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 50px;
+  letter-spacing: 0.05em;
+
+  color: #000000;
+  width: 646px;
+  height: 265px;
+  text-align: center;
+  padding:18px;border-radius: 50px 0px;border: 1px solid #4084DD; rgba(0,0,0,0.04)}
+
+.timeline{width:320px}
+.timeline-panel{background:#fff;padding:14px;border-radius:12px;border:2px dashed rgba(108,99,255,0.08)}
+.time-item{padding:12px 6px;border-bottom:1px dotted rgba(0,0,0,0.06)}
+.time-item:last-child{border-bottom:none}
+.year{display:block;font-weight:800;color:var(--accent);font-size:18px}
+.time-item p{margin:6px 0 0;color:#666}
+
+.principles-testimonials{display:flex;gap:24px;margin-top:22px}
+.ellipses{display:flex;flex-direction:column;gap:18px}
+.ellipse{border-radius:999px;padding:28px;text-align:center;min-height:90px;display:flex;flex-direction:column;justify-content:center;align-items:center;box-shadow:0 8px 18px rgba(0,0,0,0.04)}
+.ellipse strong{display:block;margin-bottom:8px}
+.ellipse.mint{
+  border-radius: 150px / 70px;  /* Horizontal radius / Vertical radius */
+  background:var(--mint);
+  padding: 28px;
+  text-align: center;
+  min-height: 100px;  /* Increased height for better ellipse proportions */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 8px 18px rgba(0,0,0,0.04);
+  min-width: 350px;  /* Ensures consistent width for all ovals */
+}
+.ellipse.lav{
+  background:var(--lav);
+  border-radius: 150px / 70px;  /* Horizontal radius / Vertical radius */
+  padding: 28px;
+  text-align: center;
+  min-height: 100px;  /* Increased height for better ellipse proportions */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 8px 18px rgba(0,0,0,0.04);
+  min-width: 350px;}
+.ellipse.peach{
+  background:var(--peach);
+  border-radius: 150px / 70px;  /* Horizontal radius / Vertical radius */
+  padding: 28px;
+  text-align: center;
+  min-height: 100px;  /* Increased height for better ellipse proportions */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 8px 18px rgba(0,0,0,0.04);
+  min-width: 350px;}
+
+.test-grid{display:flex;gap:14px}
+.names{display:flex;flex-direction:column;gap:14px}
+.name{background:#e7cfe0;border-radius:12px;padding:12px 16px;border:none;font-weight:700;color:#5a2b5a}
+.cards{flex:1;display:flex;flex-direction:column;gap:12px}
+.card{background:#d5f0f8;padding:18px;border-radius:12px;font-weight:600;color:#10232b}
+
+
+.testimonials-frame {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background: #FCDFDF;
+  z-index: -1;
+  border-radius: 20px; /* Optional: rounded corners */
+}
+
+.site-footer{background:var(--pink);padding:28px 0;margin-top:28px}
+.footer-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;max-width:1100px;margin:0 auto}
+
+@media(max-width:900px){
+  .founders-row{flex-direction:column}
+  .mission-timeline{flex-direction:column}
+  .principles-testimonials{flex-direction:column}
+  .timeline{width:100%}
+  .test-grid{flex-direction:column}
+}
+
+/* readability */
+h1,h2,h3{font-weight:700}
+p{line-height:1.5}

@@ -1,0 +1,40 @@
+:root{
+  --color-light-pink: #ffd6e0; /* page background */
+  --color-light-purple: #d9d7ff; /* search field */
+  --color-dark-purple: #6c63ff; /* category button / accents */
+  --color-text-dark: #22222a; /* headings */
+  --color-text-gray: #6b6b78; /* paragraph text */
+  --color-white: #ffffff;
+  --color-green-btn: #5bb06a;
+  --radius: 12px;
+  --radius-lg: 18px;
+  --shadow: 0 8px 18px rgba(0,0,0,0.06);
+}
+
+/* Global layout helpers */
+*{box-sizing:border-box}
+html,body{height:100%;margin:0;font-family:'Poppins',system-ui,-apple-system,'Segoe UI',Roboto,Helvetica,Arial;background:var(--color-light-pink);color:var(--color-text-dark)}
+.site-header{background:#fff;position:relative;height:64px;box-shadow:0 1px 0 rgba(0,0,0,0.04)}
+.nav-row{max-width:1440px;margin:0 auto;height:64px;display:grid;grid-template-columns:1fr auto 1fr;align-items:center;padding:0 24px;gap:12px}
+.site-logo{justify-self:start;font-weight:800;font-size:20px;color:var(--color-text-dark);text-decoration:none}
+.site-nav{justify-self:center;display:flex;gap:28px;align-items:center}
+.site-nav a{color:var(--color-text-dark);text-decoration:none;font-weight:600;padding:8px 6px}
+.site-nav a.active{color:var(--color-dark-purple)}
+.header-login{justify-self:end}
+.header-login .login{color:var(--color-dark-purple);font-weight:700;text-decoration:none}
+
+.container{max-width:1100px;margin:0 auto;padding:18px}
+
+/* simple form input styles used across pages */
+input,textarea,button{font-family:inherit}
+input[type="text"],input[type="email"],input[type="search"],textarea{border:1px solid rgba(0,0,0,0.06);border-radius:8px;padding:10px}
+.btn-primary,.btn-submit,.btn-subscribe{background:var(--color-dark-purple);color:var(--color-white);border:none;padding:10px 18px;border-radius:8px;cursor:pointer}
+
+/* Footer basic layout */
+.site-footer{background:var(--color-light-pink);padding:28px 0;margin-top:28px}
+.footer-inner{max-width:1100px;margin:0 auto;display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+
+@media (max-width: 800px){
+  .footer-inner{grid-template-columns:1fr}
+  .site-nav{display:none}
+}

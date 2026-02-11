@@ -1,185 +1,133 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>About Us - Zenith Wellness</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
-  <link rel="stylesheet" href="pages.css">
-</head>
-<body>
-  <header class="header">
-    <div class="header-inner">
-      <a href="index.html" class="logo">Zenith</a>
-      <nav class="nav">
-        <a href="index.html">Home</a>
-        <a href="about.html" class="nav-active">About us</a>
-        <a href="therapists.html">Therapists</a>
-        <a href="services.html">Service</a>
-        <a href="#">Contact us</a>
-        <a href="faqs.html">FAQs</a>
-      </nav>
-      <a href="#" class="btn-login">Login</a>
-    </div>
-  </header>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>About — Zenith Wellness</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../styles/about.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav-row">
+        <div class="logo">Zenith</div>
+        <nav class="main-nav">
+          <a href="../index.html">Home</a>
+          <a href="about.html" class="active">About us</a>
+          <a href="therapists.html">Therapists</a>
+          <a href="services.html">Service</a>
+          <a href="contact.html">Contact us</a>
+          <a href="faqs.html">FAQs</a>
+        </nav>
+        <div class="auth"><a class="login" href="#">Login</a></div>
+      </div>
+    </header>
 
-  <!-- About Us Title -->
-  <section class="page-hero page-hero-pink">
-    <h1 class="page-title">About Us</h1>
-    <div class="page-title-underline"></div>
-  </section>
-
-  <!-- Founder's Story -->
-  <section class="about-founder">
-    <div class="about-founder-inner">
-      <div class="founder-images">
-        <div class="founder-card">
-          <img src="assets/founder-salihat.png" alt="Salihat Mohammed" class="founder-img">
-          <span class="founder-name">Salihat Mohammed</span>
+    <main>
+      <section class="hero">
+        <div class="container">
+          <h1>About Us</h1>
+          <div class="accent-underline"></div>
         </div>
-        <div class="founder-card">
-          <img src="assets/founder-ruhama.png" alt="Ruhama Mekonen" class="founder-img">
-          <span class="founder-name">Ruhama Mekonen</span>
+      </section>
+
+      <section class="container">
+        <div class="about-section founder-wrapper">
+          <div class="founders"> 
+            <h2>Our founder's story</h2>
+            <div class="founders-row">
+              <div class="photos">
+                <img src="../public/images/salu.JPG" alt="Salihat">
+                <img src="../public/images/ruhama.JPG" alt="Ruhama">
+              </div>
+              <div class="founder-copy">
+                <p>
+                  Zenith Wellness was founded by Dr. Salihat Mohammed, a psychologist who overcame burnout through mindfulness and therapy. She partnered with Ruhama Mekonen, a former tech executive who found balance after struggling with anxiety. Together, they created Zenith Wellness to make mental health tools simple, practical, and accessible for everyone.
+                </p>
+              </div>
+            </div>
         </div>
       </div>
-      <div class="founder-story-text">
-        <h2>Our founder's story</h2>
-        <p>Zenith Wellness was founded by Dr. Salihat Mohammed, a psychologist who overcame burnout through mindfulness and therapy. She partnered with Ruhama Mekonen, a former tech executive who found balance after struggling with anxiety. Together, they created Zenith Wellness to make mental health tools simple, practical, and accessible for everyone.</p>
-      </div>
-    </div>
-  </section>
+      </section>
 
-  <!-- Mission & Core Principles & Our Story -->
-  <section class="about-content">
-    <div class="about-content-inner">
-      <div class="about-left">
-        <div class="about-mission">
-          <span class="about-label">mission</span>
-          <div class="about-mission-box">
-            <p>our mission is to provide professional, compassionate mental health support to busy professionals and students who struggle with stress, anxiety, and burnout.</p>
-          </div>
-        </div>
-        <div class="about-principles">
-          <span class="about-label">our core principles</span>
-          <div class="principles-list">
-            <div class="principle-item principle-teal">
-              <strong>Balance</strong> - Finding harmony between work, life, and self-care
-            </div>
-            <div class="principle-item principle-lavender">
-              <strong>Self-Care</strong> - Prioritizing mental health as a daily practice
-            </div>
-            <div class="principle-item principle-peach">
-              <strong>Connection</strong> - Building supportive communities and relationships
+
+
+        <div class="mission-timeline container">
+          <div class="mission">
+            <div class="pill">mission</div>
+            <div class="mission-box">
+              our mission is to provide professional, compassionate 
+              mental health support to busy professionals and students
+               who struggle with stress, anxiety, and burnout.
             </div>
           </div>
+
+          <aside class="timeline">
+            <div class="pill right">our story</div>
+            <div class="timeline-panel">
+              <div class="time-item"><span class="year">2024</span><p>we made clear roadmap on what to do</p></div>
+              <div class="time-item"><span class="year">2025</span><p>We started raising funds</p></div>
+              <div class="time-item"><span class="year">2026</span><p>our project got successfully launched</p></div>
+            </div>
+          </aside>
         </div>
-      </div>
-      <div class="about-right">
-        <div class="about-timeline">
-          <h3>our story</h3>
-          <div class="timeline-underline"></div>
-          <div class="timeline">
-            <div class="timeline-item">
-              <span class="timeline-year">2024</span>
-              <p>we made clear roadmap on what to do</p>
+
+        <div class="principles-testimonials container">
+
+          <div class="principles">
+            <div class="pill">our core principles</div>
+            <div class="ellipses">
+              <div class="ellipse mint"><strong>Balance</strong><p>Finding harmony between work, life, and self-care</p></div>
+              <div class="ellipse lav"><strong>Self-Care</strong><p>Prioritizing mental health as a daily practice</p></div>
+              <div class="ellipse peach"><strong>Connection</strong><p>Building supportive communities and relationships</p></div>
             </div>
-            <div class="timeline-item">
-              <span class="timeline-year">2025</span>
-              <p>We started raising funds</p>
-            </div>
-            <div class="timeline-item">
-              <span class="timeline-year">2026</span>
-              <p>our project got succesfully launched</p>
+          </div>
+
+          <div class="testimonials-frame"></div>
+          <div class="testimonials">
+            <h3>CUSTOMER TESTIMONIES</h3>
+            <div class="test-grid">
+              <div class="names">
+                <button class="name">Ikram seid</button>
+                <button class="name">chala</button>
+                <button class="name">Kebedech</button>
+                <button class="name">Rihana</button>
+              </div>
+              <div class="cards">
+                <div class="card">i feel supported and heard</div>
+                <div class="card">My therapist helped me manage stress in ways I never thought possible.</div>
+                <div class="card">I was nervous about online therapy, but the experience was safe, private, and life-changing.</div>
+                <div class="card">The guidance I received gave me confidence to face challenges. I'm grateful for Zenith Wellness.</div>
+              </div>
             </div>
           </div>
         </div>
-        <div class="about-curve"></div>
-      </div>
-    </div>
-  </section>
+      </section>
+    </main>
 
-  <!-- Customer Testimonials -->
-  <section class="testimonials">
-    <div class="testimonials-inner">
-      <h2>CUSTOMER TESTIMONIES</h2>
-      <div class="testimonials-content">
-        <div class="testimonial-tabs">
-          <button class="testimonial-tab active">Ikram seid</button>
-          <button class="testimonial-tab">chala</button>
-          <button class="testimonial-tab">Kebedech</button>
-          <button class="testimonial-tab">Rihana</button>
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div>
+          <h4>About</h4>
+          <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="#">Our story</a></li>
+          </ul>
         </div>
-        <div class="testimonial-cards">
-          <div class="testimonial-card">i feel supported and heard</div>
-          <div class="testimonial-card">My therapist helped me manage stress in ways I never thought possible.</div>
-          <div class="testimonial-card">I was nervous about online therapy, but the experience was safe, private, and life-changing.</div>
-          <div class="testimonial-card">The guidance I received gave me confidence to face challenges. I'm grateful for Zenith Wellness.</div>
+        <div>
+          <h4>Help</h4>
+          <ul><li><a href="#">Support</a></li></ul>
         </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Get In Touch -->
-  <section class="get-in-touch">
-    <div class="get-in-touch-inner">
-      <div class="get-in-touch-info">
-        <h2>Get In Touch</h2>
-        <div class="social-icons">
-          <a href="#" class="social-icon" aria-label="Instagram"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="18" cy="6" r="1.5"/></svg></a>
-          <a href="#" class="social-icon" aria-label="LinkedIn"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="2"/><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg></a>
-          <a href="#" class="social-icon" aria-label="Email"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></a>
+        <div>
+          <h4>Contact</h4>
+          <p>Phone: +2519 10193204</p>
+          <p>Email: sahilatali38@gmail.com</p>
         </div>
-        <p class="copyright">© 2026 Zenith Wellness. All rights reserved.</p>
-        <div class="legal-links">
-          <a href="#">Privacy</a><span>•</span><a href="#">Terms</a><span>•</span><a href="#">Sitemap</a>
+        <div>
+          <h4>Receive new promotions</h4>
+          <div class="subscribe"><input placeholder="Input your email" /><button class="btn small">Subscribe</button></div>
         </div>
       </div>
-      <form class="contact-form">
-        <label for="name">Name</label>
-        <input type="text" id="name" placeholder="Enter your Name">
-        <label for="email">Email</label>
-        <input type="email" id="email" placeholder="Enter your Email">
-        <label for="message">How can we help?</label>
-        <textarea id="message" placeholder="Enter your message here" rows="4"></textarea>
-        <button type="submit" class="btn btn-submit">Submit</button>
-      </form>
-    </div>
-  </section>
-
-  <footer class="footer">
-    <div class="footer-inner">
-      <div class="footer-column">
-        <h4>About</h4>
-        <a href="index.html">Home</a>
-        <a href="about.html">Our story</a>
-      </div>
-      <div class="footer-column"><h4>Help</h4></div>
-      <div class="footer-column">
-        <h4>Contact</h4>
-        <p>Phone: +2519 10193204</p>
-        <p>Email: Salihatali38@gmail.com</p>
-        <p>ruhi98mek@gmail.com</p>
-      </div>
-      <div class="footer-column footer-promo">
-        <h4>Receive new promotions</h4>
-        <p class="collab-text">let's collaborate</p>
-        <div class="newsletter-form">
-          <input type="email" placeholder="Input your email" aria-label="Email">
-          <button type="button" class="btn btn-subscribe">Subscribe</button>
-        </div>
-        <div class="footer-social">
-          <a href="#" aria-label="Twitter">𝕏</a>
-          <a href="#" aria-label="Facebook">f</a>
-          <a href="#" aria-label="LinkedIn">in</a>
-          <a href="#" aria-label="YouTube">▶</a>
-        </div>
-        <p class="copyright">© 2026 Zenith Wellness. All rights reserved.</p>
-        <div class="legal-links"><a href="#">Privacy</a><span>•</span><a href="#">Terms</a><span>•</span><a href="#">Sitemap</a></div>
-      </div>
-    </div>
-  </footer>
-</body>
+    </footer>
+  </body>
 </html>
